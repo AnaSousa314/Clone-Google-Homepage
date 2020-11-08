@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google UI Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="menu">
@@ -12,8 +12,8 @@
         <div class="menu__section left">
             <img class="menu__icon" src="./assets/burger-icon.svg" alt="Burger">
 
-            <a class="menu__link" href="">All</a>
-            <a class="menu__link" href="">Images</a>
+            <a class="menu__link" active>All</a>
+            <a class="menu__link" >Images</a><!-- sem o href não aparece o underline no link -->
             
         </div>
 
@@ -22,10 +22,12 @@
             <img class="menu__icon" src="./assets/more-icon.svg" alt="More">
 
             <div class="menu__profile">
+                <!-- ao colocar o frame antes do avatar, o avatar é renderizado dentro do frame -->
+                <img class="menu__avatar--frame" src="./assets/circle-frame.svg" alt="Avatar Frame">
 
                 <img class="menu__avatar" src="./assets/fox.svg" alt="Avatar Picture" width="40">
 
-                <img class="menu__avatar--frame" src="./assets/circle-frame.svg" alt="Avatar Frame">
+                
             
             </div>
 
