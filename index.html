@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google UI Clone</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header class="menu">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="menu disappeared">
+      <div class="menu__section left disappear">
+        <img class="menu__icon" src="./assets/burger-icon.svg" alt="Burger" />
 
-        <div class="menu__section left">
-            <img class="menu__icon" src="./assets/burger-icon.svg" alt="Burger">
+        <a class="menu__link" active>All</a>
+        <a class="menu__link">Images</a
+        ><!-- sem o href não aparece o underline no link -->
+      </div>
 
-            <a class="menu__link" active>All</a>
-            <a class="menu__link" >Images</a><!-- sem o href não aparece o underline no link -->
-            
+      <div class="menu__section right">
+        <img class="menu__icon" src="./assets/more-icon.svg" alt="More" />
+
+        <div class="menu__profile">
+          <!-- ao colocar o frame antes do avatar, o avatar é renderizado dentro do frame -->
+          <img
+            class="menu__avatar--frame"
+            src="./assets/circle-frame.svg"
+            alt="Avatar Frame"
+          />
+
+          <img
+            class="menu__avatar"
+            src="./assets/fox.svg"
+            alt="Avatar Picture"
+            width="40"
+          />
         </div>
-
-        <div class="menu__section right">
-
-            <img class="menu__icon" src="./assets/more-icon.svg" alt="More">
-
-            <div class="menu__profile">
-                <!-- ao colocar o frame antes do avatar, o avatar é renderizado dentro do frame -->
-                <img class="menu__avatar--frame" src="./assets/circle-frame.svg" alt="Avatar Frame">
-
-                <img class="menu__avatar" src="./assets/fox.svg" alt="Avatar Picture" width="40">     
-            
-            </div>
-
-        </div>
-
+      </div>
     </header>
-    
+
     <main class="content">
-        <img class="content__logo" src="./assets/logo.svg" alt="UI Clone">
+      <img class="content__logo" src="./assets/logo.svg" alt="UI Clone" />
 
-        <input class="content__search" type="text">
+      <input class="content__search" type="text" />
 
-        <!-- <div class="content__offer">
-            Made with love by
-            <a href="https://youtube.com/rocketseat" target="_blank">Rocketseat</a>  for studying purpose.
-        </div> -->
+      <div class="content__button">
+        <center>
+          <input type="submit" value="Pesquisa UI Clone" />
+
+          <input type="submit" value="Estou com Sorte" />
+        </center>
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__section footer__location">
-            <span>Brazil</span>
-        </div>
+      <div class="footer__section footer__location">
+        <span>Brazil</span>
+      </div>
 
-        <div class="footer__section footer__links">
-            <a>Settings</a>
-            <a>Privacy</a>
-            <a>Terms</a>
-        </div>
-
+      <div class="footer__section footer__links">
+        <a>Settings</a>
+        <a>Privacy</a>
+        <a>Terms</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
